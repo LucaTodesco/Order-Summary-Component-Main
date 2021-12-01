@@ -2,23 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+
+  <title>Order summary card</title>
+
 </head>
 <body>
+  <!--
 
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
+  You can now listen to millions of songs, audiobooks, and podcasts on any
   device anywhere you like!
 
   Annual Plan
@@ -27,11 +23,35 @@
   Change
 
   Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  Cancel Order-->
+  <div id="overlay">
+    <div id="container">
+      <div id="card">
+        <div id="card-image"></div>
+        <div id="card-info">
+          <p id="title">Order Summary</p>
+          <p id="text">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+          <div id="plan-container">
+            <div id="left_plan">
+              <span id="icon_music"></span>
+            </div>
+            <div id="center_plan">
+              <span id="center_text1">Annual plan</span>
+              <span id="center_text2">$59.99/year</span>
+            </div>
+            <div id="right_plan">
+              <a href="#">Change</a>
+            </div>
+          </div>
+          <div id="btnPayment">Proceed to Payment</div>
+          <span id="cancelOrder">Cancel Order</span>
+        </div>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a><br />
+      Coded by <strong>Luca Todesco</strong>
+    </div>
   </div>
 </body>
 </html>

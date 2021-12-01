@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  background: url(../images/pattern-background-desktop.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: -47%;
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 228, 225, 0.8);
+}
+
+#container {
+  height: 100vh;
+}
+
+.attribution {
+  font-weight: 300;
+  text-align: center;
+  font-size: 10px;
+}
+
+.attribution a, .attribution strong {
+  color: #193978;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.attribution a:hover {
+  color: #0d1e3f;
+}
+
+#card {
+  position: relative;
+  top: calc(50% - 240px);
+  left: calc(50% - 147px);
+  height: 480px;
+  width: 294px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+
+#card #card-image {
+  width: 100%;
+  height: 30%;
+  background: url('../images/illustration-hero.svg');
+  background-size: contain;
+}
+
+#card #card-info {
+  width: 100%;
+  height: 70%;
+}
+
+#card #card-info p {
+  text-align: center;
+}
+
+#card #card-info #title {
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 35px;
+  color: hsl(223, 47%, 23%);
+}
+
+#card #card-info #text
+{
+  font-size: 11px;
+  padding: 0 25px;
+  line-height: 20px;
+  color: #777;
+  font-weight: 500;
+}
+
+#card #card-info #plan-container {
+  background-color: #f5f7ff;
+  width: 75%;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+
+#card #card-info #plan-container #left_plan {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+
+#card #card-info #plan-container #left_plan #icon_music {
+  background: url(../images/icon-music.svg) no-repeat 50%;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-size: 35px;
+}
+
+#card #card-info #plan-container #center_plan {
+  height: 100%;
+  width: 50%;
+  float: left;
+}
+
+#card #card-info #plan-container #center_plan #center_text1 {
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-block;
+  margin-top: 15px;
+}
+
+#card #card-info #plan-container #center_plan #center_text2 {
+  font-size: 12px;
+  color: #7a7f92;
+  font-weight: 500;
+  margin-top: -5px;
+}
+
+#card #card-info #plan-container #right_plan {
+  height: 100%;
+  width: 20%;
+  float: left;
+}
+
+#card #card-info #plan-container #right_plan a {
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 25px;
+  display: inline-block;
+}
+
+#card #card-info #plan-container #right_plan a:hover {
+  text-decoration: none;
+}
+
+#card #card-info #btnPayment {
+  background-color: #382ae1;
+  width: 75%;
+  height: 23px;
+  margin: 20px auto;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+  padding-top: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  box-shadow: 0px 10px 5px #e0e8ff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#card #card-info #btnPayment:hover {
+  opacity: 0.8;
+}
+
+#card #card-info #cancelOrder {
+  margin: 0 auto;
+  font-size: 10px;
+  color: #70788d;
+  font-weight: 900;
+  text-align: center;
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#card #card-info #cancelOrder:hover {
+  color: #222;
+}
